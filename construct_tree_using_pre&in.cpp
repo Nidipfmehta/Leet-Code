@@ -85,12 +85,6 @@ TreeNode* construct_tree(vector<int>& inorder, vector<int>& preorder, int left, 
     TreeNode* root = new TreeNode(rootval);
     int n;
     index++;
-    //cout<<rootval<<endl;
-    //return root;
-    // if(left == right)
-    // {
-    //     return root;
-    // }
     for (int i=left; i<=right; i++)
     {
         if (inorder[i] == rootval)
